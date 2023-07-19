@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container>div {
+            background-color: #444444;
+            height: 130px;
+            margin: 8px;
+            border-radius: 8px;
+            color: white;
+            font-size: 45px;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, fr);
+            width: 65%;
+            margin: auto;
+            padding: 30px;
+
+        }
+
+
+
+        #container>div:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 1;
+            grid-column-start: 3;
+            background-color: #444444;
+        }
+
+        #container>div:nth-child(2) {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 3;
+            grid-column-start: 5;
+            background-color: #444444;
+        }
+
+        #container>div:nth-child(4) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-end: 2;
+            grid-column-start: 5;
+            background-color: #444444;
+        }
+
+        #container>div:nth-child(5) {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-end: 1;
+            grid-column-start: 5;
+            background-color: #444444;
+        }
+
+        p {
+            margin: auto;
+            padding: 34px;
+            font-weight: 550;
+        }
+    </style>
+</head>
+
+<body>
+            <div id="container">
+
+                <div>
+                    <p>A</p>
+                </div>
+                <div>
+                    <p>B</p>
+                </div>
+                <div>
+                    <p>C</p>
+                </div>
+                <div>
+                    <p>D</p>
+                </div>
+                <div>
+                    <p>E</p>
+                </div>
+            </div>
+</body>
+
+</html>

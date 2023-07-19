@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow</title>
+  <style>
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .slideshow-image {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    .slideshow-controls {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .slideshow-controls button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <img class="slideshow-image" src="https://tse1.mm.bing.net/th?id=OIP.uM_xWKJRPzJ7i3kgC0dn6gHaEL&pid=Api&P=0&h=180" alt="Slide 1">
+    <img class="slideshow-image" src="https://tse3.mm.bing.net/th?id=OIP.blLZC8tsHmtF4KReHA0RLAHaEK&pid=Api&P=0&h=180" alt="Slide 2">
+    <img class="slideshow-image" src="https://tse1.mm.bing.net/th?id=OIP.uM_xWKJRPzJ7i3kgC0dn6gHaEL&pid=Api&P=0&h=180" alt="Slide 1">
+    <img class="slideshow-image" src="https://tse3.mm.bing.net/th?id=OIP.blLZC8tsHmtF4KReHA0RLAHaEK&pid=Api&P=0&h=180" alt="Slide 2">
+    <img class="slideshow-image" src="https://tse1.mm.bing.net/th?id=OIP.uM_xWKJRPzJ7i3kgC0dn6gHaEL&pid=Api&P=0&h=180" alt="Slide 1">
+    <img class="slideshow-image" src="https://tse3.mm.bing.net/th?id=OIP.blLZC8tsHmtF4KReHA0RLAHaEK&pid=Api&P=0&h=180" alt="Slide 2">
+    <img class="slideshow-image" src="https://tse1.mm.bing.net/th?id=OIP.uM_xWKJRPzJ7i3kgC0dn6gHaEL&pid=Api&P=0&h=180" alt="Slide 1">
+    <img class="slideshow-image" src="https://tse3.mm.bing.net/th?id=OIP.blLZC8tsHmtF4KReHA0RLAHaEK&pid=Api&P=0&h=180" alt="Slide 2">
+    <img class="slideshow-image" src="https://tse1.mm.bing.net/th?id=OIP.uM_xWKJRPzJ7i3kgC0dn6gHaEL&pid=Api&P=0&h=180" alt="Slide 1">
+    <img class="slideshow-image" src="https://tse3.mm.bing.net/th?id=OIP.blLZC8tsHmtF4KReHA0RLAHaEK&pid=Api&P=0&h=180" alt="Slide 2">
+    
+    <!-- Add more image elements here -->
+
+    <div class="slideshow-controls">
+      <button onclick="toggleSlideshow()">Start/Stop</button>
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("slideshow-image");
+    var timer;
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        slideIndex = 0;
+      } else if (index < 0) {
+        slideIndex = slides.length - 1;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex].style.display = "block";
+    }
+
+    function nextSlide() {
+      clearInterval(timer);
+      showSlide(slideIndex + 1);
+    }
+
+    function prevSlide() {
+      clearInterval(timer);
+      showSlide(slideIndex - 1);
+    }
+
+    function toggleSlideshow() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      } else {
+        timer = setInterval(function() {
+          showSlide(slideIndex + 1);
+        }, 2000);
+      }
+    }
+
+    showSlide(slideIndex);
+  </script>
+</body>
+</html>

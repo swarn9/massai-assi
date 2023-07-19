@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Data Capture</title>
+</head>
+<body>
+  <input type="text" id="myInput">
+  <button id="myButton">Submit</button>
+  <p id="display"></p>
+
+  <script>
+    // Get the input and button elements using their IDs
+    const input = document.getElementById('myInput');
+    const button = document.getElementById('myButton');
+    const display = document.getElementById('display');
+
+    // Add event listener to the button
+    button.addEventListener('click', function() {
+      // Get the value entered in the input field
+      const enteredValue = input.value;
+
+      // Show an alert with the entered value
+      alert('Entered Value: ' + enteredValue);
+
+      // Display the entered value on the webpage
+      display.textContent = 'Entered Value: ' + enteredValue;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator </title>
+    <style>
+        h1 {
+            color: teal;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .parent {
+            width: 250px;
+            background-color: white;
+            height: 305px;
+            margin: auto;
+            padding: 35px;
+            margin-top: 60px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #Display {
+            width: 90%;
+            margin: auto;
+            height: 45px;
+            border-radius: 5px;
+            background-color: #fcfef9;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .row {
+            height: 48px;
+            background-color: white;
+            /* border: 2px solid black; */
+            margin: 10px;
+            width: 90%;
+            display: flex;
+        }
+
+        .row>div {
+            width: 48px;
+            height: 48px;
+            background-color: white;
+            margin: auto;
+            font-weight: 900;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        div>div>div {
+            margin: 14.5px;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #txtwhite {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Masai Calculator </h1>
+    </div>
+
+    <div class="parent">
+
+        <div id="Display"></div>
+        <div class="row">
+            <div>
+                <div> 1</div>
+            </div>
+            <div>
+                <div> 2</div>
+            </div>
+            <div>
+                <div>3</div>
+            </div>
+            <div id="black">
+                <div id="txtwhite"> +</div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <div> 4</div>
+            </div>
+            <div>
+                <div> 5</div>
+            </div>
+            <div>
+                <div> 6</div>
+            </div>
+            <div id="black">
+                <div id="txtwhite"> -</div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <div> 7</div>
+            </div>
+            <div>
+                <div> 8</div>
+            </div>
+            <div>
+                <div> 9</div>
+            </div>
+            <div id="black">
+                <div id="txtwhite"> x</div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="red">
+                <div id="txtwhite"> C</div>
+            </div>
+            <div>
+                <div> 0</div>
+            </div>
+            <div id="black">
+                <div id="txtwhite"> =</div>
+            </div>
+            <div id="black">
+                <div id="txtwhite"> /</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer Clock</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .clock {
+      font-size: 48px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .label {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .time {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock" id="timer">
+    <div class="time">
+      <div class="hours">00</div>
+      <div class="label">Hours</div>
+    </div>
+    <div class="time">
+      <div class="minutes">00</div>
+      <div class="label">Minutes</div>
+    </div>
+    <div class="time">
+      <div class="seconds">00</div>
+      <div class="label">Seconds</div>
+    </div>
+  </div>
+
+  <script>
+    function startTimer() {
+      var hoursElement = document.querySelector('.hours');
+      var minutesElement = document.querySelector('.minutes');
+      var secondsElement = document.querySelector('.seconds');
+
+      var hours = 0;
+      var minutes = 0;
+      var seconds = 0;
+
+      setInterval(function() {
+        seconds++;
+
+        if (seconds >= 60) {
+          seconds = 0;
+          minutes++;
+        }
+
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+
+        hoursElement.textContent = hours < 10 ? '0' + hours : hours;
+        minutesElement.textContent = minutes < 10 ? '0' + minutes : minutes;
+        secondsElement.textContent = seconds < 10 ? '0' + seconds : seconds;
+      }, 1000);
+    }
+
+    startTimer();
+  </script>
+</body>
+</html>

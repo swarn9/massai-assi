@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Layout</title>
+  <style>
+    /* Apply some basic styling to the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Create the grid container */
+    .keyboard {
+      display: grid;
+      grid-template-columns: repeat(17, 1fr);
+      gap: 5px;
+    }
+
+    /* Style the keys */
+    .key {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Style the special keys */
+    .key.special {
+      background-color: #888;
+      color: #fff;
+    }
+
+    /* Adjust the size of the special keys */
+    .key.special.double {
+      grid-column: span 2;
+    }
+
+    /* Add some hover effect to the keys */
+    .key:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="keyboard">
+    <!-- Top row -->
+    <div class="key special double">Esc</div>
+    <div class="key">F1</div>
+    <div class="key">F2</div>
+    <div class="key">F3</div>
+    <div class="key">F4</div>
+    <div class="key">F5</div>
+    <div class="key">F6</div>
+    <div class="key">F7</div>
+    <div class="key">F8</div>
+    <div class="key">F9</div>
+    <div class="key">F10</div>
+    <div class="key">F11</div>
+    <div class="key">F12</div>
+    <div class="key special double">PrtSc</div>
+    <div class="key special">Scroll</div>
+    <div class="key special">Pause</div>
+
+    <!-- Alphabets row -->
+    <div class="key special double">~<br>`</div>
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key">0</div>
+    <div class="key">-</div>
+    <div class="key">+</div>
+    <div class="key special">Backspace</div>
+
+    <!-- Tab row -->
+    <div class="key special">Tab</div>
+    <div class="key">Q</div>
+    <div class="key">W</div>
+    <div class="key">E</div>
+    <div class="key">R</div>
+    <div class="key">T</div>
+    <div class="key">Y</div>
+    <div class="key">U</div>
+    <div class="key">I</div>
+    <div class="key">O</div>
+    <div class="key">P</div>
+    <div class="key">[</div>
+    <div class="key">]</div>
+    <div class="key">\</div>
+
+    <!-- Caps Lock row -->
+    <div class="key special">Caps<br>Lock</div>
+    <div class="key">A</div>
+    <div class="key">S</div>
+    <div class="key">D</div>
+    <div class="key">F</div>
+    <div class="key">G</div>
+    <div class="key">H</div>
+    <div class="key">J</div>
+    <div class="key">K</div>
+    <div class="key">L</div>
+    <div class="key">;</div>
+    <div class="key">'</div>
+    <div class="key special">Enter</div>
+
+    <!-- Left Shift row -->
+    <div class="key special double">Shift</div>
+    <div class="key">Z</div>
+    <div class="key">X</div>
+    <div class="key">C</div>
+    <div class="key">V</div>
+    <div class="key">B</div>
+    <div class="key">N</div>
+    <div class="key">M</div>
+    <div class="key">,</div>
+    <div class="key">.</div>
+    <div class="key">/</div>
+    <div class="key special double">Shift</div>
+
+    <!-- Bottom row -->
+    <div class="key special">Ctrl</div>
+    <div class="key special">Win</div>
+    <div class="key special">Alt</div>
+    <div class="key special double">Space</div>
+    <div class="key special">Alt</div>
+    <div class="key special">Win</div>
+    <div class="key special">Menu</div>
+    <div class="key special">Ctrl</div>
+  </div>
+</body>
+</html>

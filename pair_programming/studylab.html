@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY LAB</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            /* color: white; */
+            /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+        }
+
+        .icon {
+            padding-right: 55px;
+            cursor: pointer;
+        }
+
+        #icons-parent {
+            /* justify-content: end; */
+            padding-top: 12px;
+            padding-top: 15px;
+            padding-right: 65px;
+        }
+
+        #logo {
+            padding-top: 2px;
+            cursor: pointer;
+            width: 135px;
+            height: 50px;
+            padding-left: 45px;
+        }
+
+        #p1 {
+            line-height: 1.7;
+            color: gray;
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 0;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            background-color: #fff;
+            padding-right: 44px;
+            padding-top: 25px;
+
+
+        }
+
+        #p2 {
+            line-height: 1.7;
+            color: gray;
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 0;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            background-color: #fff;
+            padding-right: 65px;
+            padding-top: 15px;
+
+
+        }
+
+        #p3 {
+            line-height: 1.7;
+            color: gray;
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 0;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            background-color: #fff;
+            padding-right: 65px;
+
+
+        }
+
+        .p4 {
+            line-height: 1.7;
+            color: gray;
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 0;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            background-color: #fff;
+            padding-right: 44px;
+            padding-top: 15px;
+        }
+
+        #imgicon {
+            padding-top: 2px;
+            cursor: pointer;
+            padding-top: 25px;
+            width: 150px;
+            height: 83px;
+            /* display: inline; */
+        }
+
+        .home {
+            color: #4d89fc;
+        }
+
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            padding: 30px;
+        }
+
+        .column {
+            /* background-color: aqua; */
+            width: 45%;
+            flex-direction: row;
+            padding: 25px;
+
+        }
+
+        .column2 {
+            /* background-color: rgb(187, 202, 77); */
+            width: 45%;
+            flex-direction: row;
+
+        }
+
+        H1 {
+            font-weight: 700;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-top: 0;
+            padding-top: 10px
+        }
+
+        #heading {
+            color: #4d89fc;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: small;
+        }
+
+        div>img {
+            width: 65px;
+            height: 65px;
+        }
+
+        .minibox {
+            padding-top: 25px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding-right: 10px;
+            padding-left: 25px;
+            padding-bottom: 25px;
+            margin: 15px
+        }
+
+        .cntabout {
+            margin: 0px;
+            font-weight: 700;
+            color: #000;
+            line-height: 1.2;
+        }
+
+        .video {
+            padding-left: 20px;
+            padding-top: 47px;
+            font-weight: 550;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <div id="navbar">
+                <span><img id="logo"
+                        src="https://www.dictionary.com/e/wp-content/uploads/2018/01/ghost_words7-790x310.jpg"
+                        alt=""></span>
+                <div id="icons-parent">
+                    <span class="icon home">Home</span>
+                    <span class="icon">About</span>
+                    <span class="icon">Course</span>
+                    <span class="icon">Instructor</span>
+                    <span class="icon">Blog</span>
+                    <span class="icon">Contact</span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div id="container">
+        <div class="column">
+            <div id="heading">WELCOME TO STUDYLAB</div>
+            <H1>We Are StudyLab An Online Learning Center</H1>
+            <p id="p1">A small river named Duden flows by their place and supplies it with the necessary regelialia. it
+                is a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p id="p2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                live the
+                blind texts.</p>
+            <p id="p3">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+
+            <div style="display: flex; flex-direction: row;">
+
+                <img id="imgicon"
+                    src="https://alpha.invensislearning.com/storage/images/banners/articles/project-management-process-groups-explained-737x364.jpg"
+                    alt="">
+
+                <div class="video">Learn anything from StudyLab, <br> Watch video</div>
+            </div>
+        </div>
+
+
+
+        <div class="column2">
+
+            <div style="display: flex; flex-direction: row; ;">
+
+                <div class="minibox"><img
+                        src="https://static.vecteezy.com/system/resources/previews/022/308/066/non_2x/application-rating-customer-and-user-reviews-5-star-free-vector.jpg"
+                        alt="">
+                    <p class="cntabout">Top Quality Content</p>
+                    <p class="p4">A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div class="minibox"><img
+                        src="https://static.vecteezy.com/system/resources/previews/020/714/120/non_2x/hard-skills-icon-design-free-vector.jpg"
+                        alt="">
+                    <p class="cntabout">Highly Skilled <br> Instructor</p>
+                    <p class="p4">A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <div class="minibox"><img
+                        src="https://static.vecteezy.com/system/resources/previews/018/895/372/non_2x/online-quiz-icon-free-vector.jpg"
+                        alt="">
+                    <p class="cntabout">World Class & Quiz</p>
+                    <p class="p4">A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div class="minibox"><img
+                        src="https://static.vecteezy.com/system/resources/previews/005/263/832/non_2x/round-green-and-gold-badge-with-ribbon-on-white-background-free-vector.jpg"
+                        alt="">
+                    <p class="cntabout">Get Certified </p>
+                    <p class="p4">A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

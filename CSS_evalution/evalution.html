@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .numbers{
+            font: size 40px;
+            margin: 10%;
+            height: 40px;
+
+        }
+        .child{
+            border: 1px solid black;
+            margin: auto;
+            margin-right: 20%;
+            width: 25%;
+            height: 90%;
+        }
+        
+        .relate{
+            border-style: dotted;
+        }
+        #grandfather{
+            display: block;
+            display: flex;
+            width: 98%;
+            height: 550px;
+            margin: auto;
+        }
+        #Father{
+            margin: auto;
+            width: 50%;
+            height: 90%;
+        }
+        #Uncle{
+            margin: auto;
+            width: 50%;
+        }
+        #Person1{
+            height: 90%;
+            display: flex;
+            width: 60%;
+            margin-right: 20px;
+            margin-left: 45px;
+            text-align: left;
+
+
+        }
+        .child{
+            width: auto;
+        }
+        #child-3{
+            display: table-column;
+          
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="relate" id="grandfather" > GrandFather
+        <div class="relate" id="Father">Father
+            <div class="relate" id="Person1">Person&nbsp1
+                <div class="child">Child-1</div>
+                <div class="child">Child-2</div>
+                <div class="child" id="Child-3">Child-3
+                    <div class="numbers relate" style="text-align: center; "> <b>1</b></div>
+                    <div class="numbers relate" style="text-align: center;" > <b>2</b></div>
+                    <div class="numbers relate" style="text-align: center;"> <b>3</b></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="relate" id="Uncle" style="text-align: center;">Uncle
+            <div class="relate" style="text-align: center;">Person-1</div>
+            <div class="relate" style="text-align: center;">Person-2
+                <div class="child" style="width: 30px; text-align: center;">Child-1</div>
+                <div class="child" style="text-align: center;">Child-2
+                    <div class="numbers relate" style="text-align: center; background-color: orange; font-size: 23px;"> <b>1</b> </div>
+                    <div class="numbers relate" style="text-align: center; "><b style="color: blue; font-size: 23px;">2</b></div>
+                    <div class="numbers relate" style="text-align: center; background-color: rgb(6, 116, 39); font-size: 23px;"><b>3</b></div>
+                </div>
+                <div class="child">Child-3</div>
+            </div>
+            <div class="relate">Person-3</div>
+        </div>
+    </div>
+</body>
+</html>
